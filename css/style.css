@@ -1,0 +1,27 @@
+
+* {
+    margin: 0;
+}
+
+.ludo-wrapper {
+    max-width: 500px;
+    border: 1px solid #c3c3c3;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.ludo-header,
+.play-area,
+.dice-container {
+    margin-bottom: 1rem;
+}
+
+.dice-container img{
+    max-width: 90px;
+    border: 1px solid #0b63c7;
+}
