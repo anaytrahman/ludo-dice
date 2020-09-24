@@ -21,7 +21,38 @@
     margin-bottom: 1rem;
 }
 
+.play-area {
+    display: flex;
+}
+
 .dice-container img{
     max-width: 90px;
     border: 1px solid #0b63c7;
+}
+
+.game-controls {
+    
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+.playing {
+    background: white;
+    padding: 1rem;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 6px #ccc;
+}
+
+.winner {
+    background: yellow;
+    font-size: 3rem;
+    padding: 2rem;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 6px #ccc;
 }
