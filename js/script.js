@@ -5,13 +5,36 @@ var btnPlay = document.querySelector("#playGame");
 var btnPlayAgain = document.querySelector("#playAgain");
 var $totalScore = document.querySelector("#totalScore");
 var winStatus = document.querySelector("#winStatus");
-var $playArea = winStatus.parentElement;
+var $playArea = document.querySelector("#play-area");
+/*
+var playNext = document.querySelector("#nextLevel");
 
+
+playNext.addEventListener('click', function() {
+    level3();
+})
+
+function level3() {
+    score = 0;
+    winningScore = 60;
+    winningText = "Level 2 Winner!!!!";
+
+    //winStatus.innerHTML = "Start New Game";
+    $playArea.classList.remove('winner');
+
+
+    btnDice.parentElement.classList.remove('hide');
+    $totalScore.innerHTML = score;
+}
+//tring 
+//var $playArea = winStatus.parentElement;
+*/
 
 // basic settings
 var score = 0;
 var winningScore = 30;
 var winningText = "Winner!!!!";
+
 
 function init() {
     // basic settings
@@ -19,12 +42,16 @@ function init() {
     winningScore = 50;
     winningText = "Wow Winner!!!!";
 
-    winStatus.innerHTML = "Start New Game";
+    winStatus.innerHTML = "Playing Level 2 ";
     $playArea.classList.remove('winner');
 
     btnPlayAgain.classList.add('hide');
+   // playNext.classList.add('show');
     btnDice.parentElement.classList.remove('hide');
     $totalScore.innerHTML = score;
+
+
+
 }
 
 // start the game
@@ -46,7 +73,6 @@ btnPlayAgain.addEventListener("click", function() {
 });
 
 
-
 // throw dice is a main method
 function throwDice() {
     var randomNumber = Math.floor((Math.random() * 6) + 1);
@@ -54,7 +80,7 @@ function throwDice() {
     // update score
     updateScore(randomNumber);
 
-    
+
     gameStatus();
 
     // todo dual player -  with own score
@@ -68,11 +94,12 @@ function throwDice() {
 // this method will check the logic of winner or looser or any another rules
 function gameStatus() {
     // if score is 20 reset it
-    if(score == 20) {
+    if (score == 20) {
         score = 0;
-    } else if(score >= winningScore) {
+    } else if (score >= winningScore) {
         btnDice.parentElement.classList.add('hide');
         btnPlayAgain.classList.remove('hide');
+
         winStatus.innerHTML = winningText;
         $playArea.classList.remove('playing');
         $playArea.classList.add('winner');
