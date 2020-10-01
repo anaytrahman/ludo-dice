@@ -1,38 +1,115 @@
-
 * {
     margin: 0;
+    padding: 0;
 }
 
-.ludo-wrapper {
-    max-width: 500px;
-    border: 1px solid #c3c3c3;
-    padding: 1rem;
-    margin: 1rem;
+.main-container {
+    max-width: 680px;
+    margin: 0 auto;
+    margin-top: 1em;
+}
+
+.game-wrapper {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    /* justify-content: center; */
-    align-items: center;
+    padding: 7px;
 }
 
-.ludo-header,
-.play-area,
-.dice-container {
-    margin-bottom: 1rem;
+.header,
+.footer {
+    background-color: #362f36db;
+    height: 100px;
 }
 
-.play-area {
-    display: flex;
+h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: #FFC107;
 }
 
-.dice-container img{
-    max-width: 90px;
-    border: 1px solid #0b63c7;
+.info-wrapper {
+    width: 73%;
+    padding: 11px;
+    margin: 0 auto;
 }
 
-.game-controls {
-    
+li {
+    font-size: 13px;
+    margin-top: 15px;
 }
+
+.game-info-sec {
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+.dice-contain-sec {
+    background-color: rgb(255 193 7 / 77%);
+}
+
+.wrapper {
+    width: 33.3%;
+    height: 325px;
+    border-radius: 37px;
+    margin-right: 4px;
+}
+
+.game-play-score-status-sec {
+    background-color: rgba(54, 211, 6, 0.295);
+}
+
+.img-dice {
+    width: 100%;
+    cursor: pointer;
+}
+
+.dice-wrapper {
+    width: 49%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+
+.status-wrapper {
+    height: 100px;
+    background: #adad05;
+    width: 86%;
+    margin: 0 auto;
+    margin-top: 1em;
+    border-radius: 15px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 7px;
+    color: white;
+    font-size: 32px;
+}
+
+.btn-wrapper {
+    padding: 4px;
+}
+
+.btn {
+    width: 98%;
+    padding: 9px;
+    margin-top: 27px;
+    background: #239223cc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #239223ad;
+}
+
+#winStatus {
+    text-align: center;
+    color: #fffdf9;
+    margin-top: 10px;
+}
+
+
+/*old css for test*/
 
 .show {
     display: flex;
@@ -42,17 +119,19 @@
     display: none;
 }
 
+
+/*
 .playing {
     background: white;
     padding: 1rem;
     border: 2px solid #fff;
     box-shadow: 0 4px 6px #ccc;
-}
+}*/
 
 .winner {
-    background: yellow;
+    /*background: yellow;
     font-size: 3rem;
-    padding: 2rem;
+    padding: 2rem;*/
     border: 2px solid #fff;
     box-shadow: 0 4px 6px #ccc;
 }

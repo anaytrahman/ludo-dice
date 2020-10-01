@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Ludo Dice</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="main-wrapper">
+        <div class="ludo-wrapper">
+
+            <header class="ludo-header">
+                <div class="score-container">
+                    Total Score : <span id="totalScore">0</span> 
+                </div>
+            </header>
+            <article class="play-area">
+                <div id="winStatus">Start Game</div>
+            </article>
+            <section class="dice-area">
+                <!-- <div id="dice">0</div> -->
+                <div class="dice-container">
+                    <img src="./images//dice-six-faces-1.svg" id="diceImg" />
+                </div>
+
+                <div class="game-controls hide">
+                    <button id="throwDice">Throw</button>
+                </div>
+
+                <div class="base-controls">
+                    <button id="playGame">Play</button>
+                    <button id="playAgain" class="hide">Play again</button>
+                </div>
+                
+                
+            </section>
+            <footer class="ludo-footer"></footer>
+        </div>
+    </section>
+
+<script  src="./js/script.js"></script>
+</body>
+</html>

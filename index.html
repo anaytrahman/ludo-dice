@@ -7,38 +7,56 @@
 </head>
 <body>
 
-    <section class="main-wrapper">
-        <div class="ludo-wrapper">
+    <div class="main-container">
+        <header class="header">
+            <h1>Dice Game </h1>
+        </header>
 
-            <header class="ludo-header">
-                <div class="score-container">
-                    Total Score : <span id="totalScore">0</span> 
-                </div>
-            </header>
-            <article class="play-area">
-                <div id="winStatus">Start Game</div>
-            </article>
-            <section class="dice-area">
-                <!-- <div id="dice">0</div> -->
-                <div class="dice-container">
-                    <img src="./images//dice-six-faces-1.svg" id="diceImg" />
-                </div>
+        <div class="game-wrapper">
 
-                <div class="game-controls hide">
-                    <button id="throwDice">Throw</button>
+            <section class="game-info-sec wrapper">
+                <div class="info-wrapper">
+                    <ol>
+                        <li>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </li>
+                        <li>in some form, by injected humour, or randomised words which don't look even </li>
+                        <li>If you are going to use a passage of Lorem Ipsum, you need to be s</li>
+                        <li>sl All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this</li>
+                    </ol>
                 </div>
-
-                <div class="base-controls">
-                    <button id="playGame">Play</button>
-                    <button id="playAgain" class="hide">Play again</button>
-                </div>
-                
-                
             </section>
-            <footer class="ludo-footer"></footer>
-        </div>
-    </section>
+            <section class="dice-contain-sec wrapper">
+                <div class="dice-wrapper">
 
-<script  src="./js/script.js"></script>
+                    <img src="./images//dice-six-faces-1.svg" class="img-dice" id="diceImg" />
+                </div>
+            </section>
+            <section class="game-play-score-status-sec wrapper">
+                <div class="status-wrapper " id="play-area">
+                    <h2 class="score" id="totalScore">00.00</h2>
+
+                    <h3 id="winStatus">Start Game</h3>
+
+                </div>
+                <div class="btn-wrapper  hide">
+                    <button type="button" class="btn" id="throwDice">Play</button>
+
+                </div>
+                <div class="play-btn btn-wrapper">
+                    <div class="play-again-btn">
+                        <button type="button" id="playAgain" class="hide btn">Play again</button>
+                    </div>
+                    <button type="button" class="btn" id="playGame">Start Game</button>
+                    <button type="button" class="btn hide" id="nextLevel">Level 3</button>
+                </div>
+
+            </section>
+
+        </div>
+        <footer class="footer">
+
+        </footer>
+
+    </div>
+    <script src="./js/script.js"></script>
 </body>
 </html>
