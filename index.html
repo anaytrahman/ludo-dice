@@ -20,22 +20,16 @@
                         <li>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration </li>
                         <li>in some form, by injected humour, or randomised words which don't look even </li>
                         <li>If you are going to use a passage of Lorem Ipsum, you need to be s</li>
-                        <li>sl All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this</li>
                     </ol>
                 </div>
             </section>
+            
             <section class="dice-contain-sec wrapper">
                 <div class="dice-wrapper">
-
                     <img src="./images//dice-six-faces-1.svg" class="img-dice" id="diceImg" />
                 </div>
-            </section>
-            <section class="game-play-score-status-sec wrapper">
-                <div class="status-wrapper " id="play-area">
-                    <h2 class="score" id="totalScore">00.00</h2>
-
-                    <h3 id="winStatus">Start Game</h3>
-
+                <div class="base-control">
+                    <button type="button" class="btn" id="playGame">Start Game</button>
                 </div>
                 <div class="btn-wrapper  hide">
                     <button type="button" class="btn" id="throwDice">Play</button>
@@ -45,15 +39,30 @@
                     <div class="play-again-btn">
                         <button type="button" id="playAgain" class="hide btn">Play again</button>
                     </div>
-                    <button type="button" class="btn" id="playGame">Start Game</button>
                     <button type="button" class="btn hide" id="nextLevel">Level 3</button>
+                </div>
+            </section>
+            <!-- Play are section end here -->
+
+            <section class="game-play-score-status-sec wrapper">
+                <div class="score-wrapper" id="play-area">
+                    <span class="score" id="totalScore">00.00</span>
+
+                </div>
+
+                <div class="status-wrapper">
+                    <h3 id="winStatus">Start Game</h3>
+                </div>
+
+                <div class="player-container activePlayer">
+                    <span class="player"> Anayt is <span class="playingStatus"> playing</span> </span>
                 </div>
 
             </section>
 
         </div>
         <footer class="footer">
-
+          Game developed by Anayt Rahmani
         </footer>
 
     </div>
