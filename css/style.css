@@ -15,7 +15,7 @@ body {
 
 .game-wrapper {
     display: flex;
-    padding: 7px;
+    margin: 2px 0;
 }
 
 .header,
@@ -66,6 +66,11 @@ li {
 .wrapper {
     height: 325px;
     margin-right: 4px;
+}
+
+
+.wrapper:nth-last-child(1) {
+    margin-right: 0;
 }
 
 .game-play-score-status-sec {

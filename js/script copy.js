@@ -49,6 +49,9 @@ function init() {
    // playNext.classList.add('show');
     btnDice.parentElement.classList.remove('hide');
     $totalScore.innerHTML = score;
+
+
+
 }
 
 // start the game
